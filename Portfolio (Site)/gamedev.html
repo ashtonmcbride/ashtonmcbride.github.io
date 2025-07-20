@@ -1,0 +1,1344 @@
+<!DOCTYPE HTML>
+<html>
+
+	<!-- Head -->
+	<head>
+		<title>Ashton McBride's Portfolio - Game Dev Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+	<!-- Body -->
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">Portfolio</a>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+
+				<!-- Tabs -->
+				<ul class="links">
+					<li><a href="index.html">Main Page</a></li>
+					<li><a href="personalprojects.html">Personal Projects</a></li>
+					<li class="active"><a href="schoolprojects.html">School Projects</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="resume.html">Resume</a></li>
+				</ul>
+
+				<!-- Socials -->
+				<ul class="icons">
+					<li><a href="https://roblox.com/users/81033782/profile" target="_blank" class="icon"><span class="iconify fa-lg" data-icon="simple-icons:roblox" class="label"></span></a></li>
+					<li><a href="https://github.com/ashtonmcbride" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://youtube.com/@Zen_os" target="_blank" class="icon brands fa-youtube"><span class="label">youtube</span></a></li>
+					<li><a href="https://x.com/Zen_os" target="_blank" class="icon brands fa-x-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://ebay.com/usr/zens.store" target="_blank" class="icon brands fa-ebay"><span class="label">ebay</span></a></li>
+				</ul>
+
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Post -->
+				<section class="post">
+
+					<!-- Title -->
+					<header class="major">
+						<h2>TaskSphere</h2>
+						<h5 style="color: #a7a7a7; display: flex; justify-content: center;">School Project</h5>
+						<hr />
+					</header>
+
+					<!-- Image -->
+					<img style="display: block; margin-left: auto; margin-right: auto; width: 45%" src="media/School Projects/TaskSphere/1.png"/><br>
+
+					<!-- Description -->
+					<br><br><h2>Description</h2>
+					<div class="box">
+						<p>
+							<i>(Note: This page is not fully finished!)</i>
+						</p>
+					</div>
+					<div class="box">
+						<p>
+							<strong>Table of Contents</strong>
+							<br />1. <a data-scrolly href="#slideshow">Slideshow</a>
+							<br />2. <a data-scrolly href="#diagrams">UML Diagrams</a>
+							<br />3. <a data-scrolly href="#code">Code</a>
+							<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1 <a data-scrolly href="#code1">Main File</a>
+							<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2 <a data-scrolly href="#code2">Source Files</a>
+							<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.3 <a data-scrolly href="#code3">Header Files</a>
+							<br />4. <a data-scrolly href="#output">Output</a>
+						</p>
+					</div>
+
+					<!-- View Gallery Button -->
+					<h5 style="color: #a7a7a7; display: flex; justify-content: right;">
+						<a href="gallery.html#tasksphere">View Gallery ➜</a>
+					</h5>
+
+					<!-- Slideshow -->
+					<br><h2 id="slideshow">SLIDESHOW</h2>
+
+					<div class="slides-container">
+						<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQZF6QgOyvIWsFZDaYqg3S4eabX0MplNdW8UkVegDq4gM5T3C7fy0Qrzv8i5N2usv2r-5LZ4fQzzvqm/embed?start=false&loop=true&delayms=15000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+					</div>
+
+					<hr />
+
+					<!-- Project Plan -->
+					<br><h2 id="plan">PROJECT PLAN</h2>
+
+					<div class="pdf-container">
+						<embed src="media/School Projects/TaskSphere/Project Plan.pdf" type="application/pdf" class="pdf-embed">
+					</div>
+
+					<hr />
+
+
+
+					<!-- Diagrams -->
+					<h2 id="diagrams">UML Diagrams</h2>
+					<div class="box">
+
+						<!-- Image Slider -->
+							<div class="image-slider">
+
+								<span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+
+								<!-- Images -->
+								<div class="slides">
+									<img src="media/School Projects/TaskSphere/Diagrams/1.png" class="slide active">
+									<img src="media/School Projects/TaskSphere/Diagrams/2.png" class="slide">
+									<img src="media/School Projects/TaskSphere/Diagrams/3.png" class="slide">
+									<img src="media/School Projects/TaskSphere/Diagrams/4.png" class="slide">
+									<img src="media/School Projects/TaskSphere/Diagrams/5.png" class="slide">
+								</div>
+
+								<span class="next" onclick="changeSlide(1)">&#10095;</span>
+								
+								<!-- Image Counter -->
+								<div class="image-counter">
+									<h5 style="color: #a7a7a7"><span id="current-image">1</span>/<span id="total-images">5</span></h5>
+								</div>
+
+							</div>
+						
+					</div>
+					<hr />
+
+
+					
+					<!-- Code -->
+					<h2 id="code">CODE</h2>
+
+					<div class="box" id="code1">
+
+<h3>MAIN FILE</h3>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+<pre><code><span class="comment">//  INEW-2340-001 Final Project</span>
+<span class="comment">//  Author: Ashton McBride</span>
+<span class="comment">//  Date: 10/13/2024</span>
+<span class="comment">//  TaskSphere - main.cpp</span>
+
+<span class="comment">/*  Resources Used</span>
+<span class="comment">-  **Confluence Template**: [Programming 3 - Data Structures / C++ IDE Installation / Lab Template] https://dr-roark.atlassian.net/wiki/spaces/P3DS/pages/1474887893/Lab+Template</span>
+<span class="comment">-  **Confluence Demo**: [Programming 3 - Data Structures / Classes and Objects / Demo - Class Person] https://dr-roark.atlassian.net/wiki/spaces/P3DS/pages/1377271809/Demo+-+Class+Person</span>
+<span class="comment">-  **Confluence Demo**: [Programming 3 - Data Structures / Classes and Objects / Vector - Car Class Demo] https://dr-roark.atlassian.net/wiki/spaces/P3DS/pages/1381466145/Vector+-+Car+Class+Demo</span>
+<span class="comment">-  **Confluence Content**: [Programming 1 / Module 2 - Input, Output, and Control Structures / File Input and Output] https://dr-roark.atlassian.net/wiki/spaces/Prog1/pages/1610088488/File+Input+and+Output</span>
+<span class="comment">-  **GeeksforGeeks Article**: [Vector erase() in C++ STL] https://www.geeksforgeeks.org/vector-erase-in-cpp-stl/</span>
+<span class="comment">-  **GeeksforGeeks Article**: [stringstream in C++ and its Applications] https://www.geeksforgeeks.org/stringstream-c-applications/</span>
+<span class="comment">-  **Yuzu eBook**: [Gaddis, Tony - Starting Out with C++ from Control Structures Through Objects / Chapter 4: Making Decisions / 4.15 The switch Statement] https://reader.yuzu.com/reader/books/9780135928349/epubcfi/6/132</span>
+<span class="comment">-  **Yuzu eBook**: [Gaddis, Tony - Starting Out with C++ from Control Structures Through Objects / Chapter 6: Functions / 6.13 Using Reference Variables as Parameters] https://reader.yuzu.com/reader/books/9780135928349/epubcfi/6/198</span>
+<span class="comment">-  **Yuzu eBook**: [Gaddis, Tony - Starting Out with C++ from Control Structures Through Objects / Chapter 7: Arrays and Vectors / 7.11 Introduction to the STL vector] https://reader.yuzu.com/reader/books/9780135928349/epubcfi/6/232</span>
+<span class="comment">-  **Yuzu eBook**: [Gaddis, Tony - Starting Out with C++ from Control Structures Through Objects / Chapter 10: Characters, C-Strings, and More about the string Class / 10.5 String/Numeric Conversion Functions] https://reader.yuzu.com/reader/books/9780135928349/epubcfi/6/292</span>
+<span class="comment">*/</span>
+
+<span class="preprocessor">#include "Task.h"</span>
+<span class="preprocessor">#include "Category.h"</span>
+
+<span class="preprocessor">#include &lt;iostream&gt;</span>
+<span class="preprocessor">#include &lt;fstream&gt;</span>
+<span class="preprocessor">#include &lt;sstream&gt;</span>
+<span class="preprocessor">#include &lt;string&gt;</span>
+<span class="preprocessor">#include &lt;vector&gt;</span>
+<span class="variable">using namespace</span> std;
+
+<span class="comment">// Function Prototypes</span>
+<span class="variable">void</span> <span class="function">DisplayMenu</span>();
+<span class="variable">void</span> <span class="function">DisplayTasks</span>(<span class="variable">vector</span>&lt;Task&gt;&, <span class="variable">vector</span>&lt;Category&gt;&);
+<span class="variable">void</span> <span class="function">DisplayCategories</span>(<span class="variable">vector</span>&lt;Category&gt;&);
+<span class="variable">void</span> <span class="function">ReassignTaskIDs</span>(<span class="variable">vector</span>&lt;Task&gt;&);
+<span class="variable">void</span> <span class="function">ReassignCategoryIDs</span>(<span class="variable">vector</span>&lt;Category&gt;&, <span class="variable">vector</span>&lt;Task&gt;&);
+
+<span class="variable">void</span> <span class="function">LoadTasks</span>(<span class="variable">vector</span>&lt;Task&gt;&, <span class="variable">int</span>&);
+<span class="variable">void</span> <span class="function">LoadCategories</span>(<span class="variable">vector</span>&lt;Category&gt;&, <span class="variable">int</span>&);
+<span class="variable">void</span> <span class="function">SaveTasks</span>(<span class="variable">vector</span>&lt;Task&gt;&);
+<span class="variable">void</span> <span class="function">SaveCategories</span>(<span class="variable">vector</span>&lt;Category&gt;&);
+
+
+<span class="comment">// Main Function</span>
+<span class="variable">int</span> main() {
+
+    <span class="comment">// Declare Variables</span>
+    <span class="variable">vector</span>&lt;Task&gt; taskList;
+    <span class="variable">vector</span>&lt;Category&gt; categoryList;
+
+    <span class="variable">int</span> choice = <span class="number">0</span>;
+    <span class="variable">int</span> taskCount = <span class="number">0</span>;
+    <span class="variable">int</span> categoryCount = <span class="number">0</span>;
+    <span class="variable">bool</span> firstDisplay = <span class="bool">true</span>;
+
+    <span class="comment">// Load Saved Data</span>
+    <span class="function">LoadTasks</span>(taskList, taskCount);
+    LoadCategories(categoryList, categoryCount);
+
+    <span class="comment">// Display Welcome Message</span>
+    cout << <span class="cstring">"Welcome to TaskSphere: Your personal To-Do List Manager!"</span> << endl;
+
+    <span class="comment">// Main Loop</span>
+    <span class="variable">while</span> (choice != <span class="number">5</span>)
+    {
+        <span class="comment">// Detect First Loop</span>
+        <span class="variable">if</span> (firstDisplay == <span class="bool">true</span>)
+        {
+            <span class="function">DisplayMenu</span>();
+            firstDisplay = <span class="bool">false</span>;
+
+            cout << <span class="cstring">"Enter your selection: "</span>;
+        }
+        <span class="variable">else</span>
+        {
+            <span class="comment">// cout << "Current task count: " << taskCount << endl;</span>
+            <span class="comment">// cout << "Current category count: " << categoryCount << endl;</span>
+            cout << <span class="cstring">"\n\nEnter your next selection: "</span>;
+        }
+
+        <span class="comment">// Get User Input</span>
+        cin >> choice;
+
+        <span class="variable">switch</span> (choice)
+        {
+            <span class="comment">// View Current Tasks</span>
+            <span class="variable">case</span> <span class="number">1</span>:
+            {
+                <span class="variable">if</span> (taskCount == <span class="number">0</span>)
+                {
+                    cout << <span class="cstring">"You have no current tasks!"</span> << endl;
+                }
+                <span class="variable">else</span>
+                {
+                    <span class="function">DisplayTasks</span>(taskList, categoryList);
+                }
+
+                <span class="variable">if</span> (categoryCount == <span class="number">0</span>)
+                {
+                    cout << <span class="cstring">"You have no current categories!"</span> << endl;
+                }
+                <span class="variable">else</span>
+                {
+                    <span class="function">DisplayCategories</span>(categoryList);
+                }
+
+                <span class="variable">break</span>;
+            }
+
+            <span class="comment">// Create New Task</span>
+            <span class="variable">case</span> <span class="number">2</span>:
+            {
+                string name, due, reminder, priority;
+                <span class="variable">char</span> answer1;
+
+                Task newTask;
+                newTask.SetTaskId(taskCount + <span class="number">1</span>);
+
+                cout << <span class="cstring">"Enter the task you would like to create: "</span>;
+                cin.ignore();
+                getline(cin, name);
+                newTask.SetTaskName(name);
+				
+                cout << <span class="cstring">"Enter the task's due date: "</span>;
+                getline(cin, due);
+                newTask.SetTaskDueDate(due);
+				
+                cout << <span class="cstring">"Enter when you would like to be reminded about this task: "</span>;
+                getline(cin, reminder);
+                newTask.SetTaskReminder(reminder);
+				
+                cout << <span class="cstring">"Enter the task's priority level (Low, Medium, High): "</span>;
+                getline(cin, priority);
+                newTask.SetTaskPriority(priority);
+				
+                cout << <span class="cstring">"Would you like to add this task to a category? (Y/N): "</span>;
+                cin >> answer1;
+
+                <span class="variable">if</span> (answer1 == <span class="character">'Y'</span>)
+                {
+                    <span class="variable">char</span> answer2;
+					
+                    cout << <span class="cstring">"Would you like to create a new category? (Y/N): "</span>;
+                    cin >> answer2;
+
+                    <span class="variable">if</span> (answer2 == <span class="character">'Y'</span>)
+                    {
+                        string categoryName;
+						
+                        cout << <span class="cstring">"Enter the name of the category you would like to create: "</span>;
+                        cin.ignore();
+                        getline(cin, categoryName);
+						
+                        Category newCategory;
+                        newCategory.SetCategoryId(categoryCount + <span class="number">1</span>);
+                        newCategory.SetCategoryName(categoryName);
+                        newCategory.SetCategoryTaskAmount(<span class="number">1</span>);
+						
+                        newTask.SetCategoryId(newCategory.GetCategoryId());
+						
+                        taskList.push_back(newTask);
+                        categoryList.push_back(newCategory);
+						
+                        cout << <span class="cstring">"New task created successfully!"</span> << endl;
+                        cout << <span class="cstring">"New task successfully added to new category "</span> << newCategory.GetCategoryId() << ". " << categoryName << endl;
+
+                        taskCount = taskCount + <span class="number">1</span>;
+                        categoryCount = categoryCount + <span class="number">1</span>;
+                    }
+                    <span class="variable">else if</span> (answer2 != <span class="character">'Y'</span>)
+                    {
+                        <span class="variable">if</span> (categoryCount == <span class="number">0</span>)
+                        {
+                            taskList.push_back(newTask);
+                            cout << <span class="cstring">"New task created successfully!"</span> << endl;
+                            cout << <span class="cstring">"Unable to add task to category! No categories exist yet."</span> << endl;
+							
+                            taskCount = taskCount + <span class="number">1</span>;
+                        }
+                        <span class="variable">else</span>
+                        {
+                            <span class="variable">int</span> selection1;
+							
+                            <span class="function">DisplayCategories</span>(categoryList);
+							
+                            cout << <span class="cstring">"Enter the category number that you would like to add this task into: "</span>;
+                            cin >> selection1;
+							
+                            newTask.SetCategoryId(selection1);
+							
+                            categoryList[selection1 - <span class="number">1</span>].SetCategoryTaskAmount(categoryList[selection1 - <span class="number">1</span>].GetCategoryTaskAmount() + <span class="number">1</span>);
+							
+                            taskList.push_back(newTask);
+							
+                            cout << <span class="cstring">"New task created successfully!"</span> << endl;
+                            cout << <span class="cstring">"New task successfully added to category!"</span> << endl;
+							
+                            taskCount = taskCount + <span class="number">1</span>;
+                        }
+                    }
+                }
+                <span class="variable">else if</span> (answer1 != <span class="character">'Y'</span>)
+                {
+                    taskList.push_back(newTask);
+
+                    cout << <span class="cstring">"New task created successfully!"</span> << endl;
+                    taskCount = taskCount + <span class="number">1</span>;
+                }
+
+                <span class="variable">break</span>;
+            }
+			
+            <span class="comment">// Edit Tasks</span>
+            <span class="variable">case</span> <span class="number">3</span>:
+            {
+                <span class="variable">if</span> (taskCount == <span class="number">0</span>)
+                {
+                    cout << <span class="cstring">"You have no current tasks!"</span> << endl;
+                }
+                <span class="variable">else</span>
+                {
+                    <span class="variable">int</span> selection1, selection2;
+
+                    <span class="function">DisplayTasks</span>(taskList, categoryList);
+
+                    cout << <span class="cstring">"Enter the task number that you would like to edit: "</span>;
+                    cin >> selection1;
+					
+                    Task& selectedTask = taskList[selection1 - <span class="number">1</span>];
+					
+                    cout << <span class="cstring">"\n---------------------------------------------------------"</span> << endl;
+                    cout << <span class="cstring">"Type the number for the action you would like to perform:"</span> << endl << endl;
+                    cout << <span class="cstring">"1. Update Task"</span> << endl;
+                    cout << <span class="cstring">"2. Delete Task"</span> << endl;
+                    cout << <span class="cstring">"---------------------------------------------------------"</span> << endl;
+                    cout << <span class="cstring">"Enter your selection: "</span>;
+					
+                    cin >> selection2;
+
+                    <span class="variable">switch</span> (selection2)
+                    {
+                        <span class="comment">// Update Selected Task</span>
+                        <span class="variable">case</span> <span class="number">1</span>:
+                        {
+                            <span class="variable">int</span> selection3;
+
+                            cout << <span class="cstring">"\n---------------------------------------------------------"</span> << endl;
+                            cout << <span class="cstring">"Type the number for the action you would like to perform:"</span> << endl << endl;
+                            cout << <span class="cstring">"1. Update Task Name"</span> << endl;
+                            cout << <span class="cstring">"2. Update Task Due Date"</span> << endl;
+                            cout << <span class="cstring">"3. Update Task Reminder(s)"</span> << endl;
+                            cout << <span class="cstring">"4. Update Task Priority"</span> << endl;
+                            cout << <span class="cstring">"5. Update Task Status"</span> << endl;
+                            cout << <span class="cstring">"6. Add Task to Category"</span> << endl;
+                            cout << <span class="cstring">"7. Remove Task from Category"</span> << endl;
+                            cout << <span class="cstring">"---------------------------------------------------------"</span> << endl;
+                            cout << <span class="cstring">"Enter your selection: "</span>;
+                            cin >> selection3;
+							
+                            <span class="variable">switch</span> (selection3)
+                            {
+                                <span class="comment">// Update Task Name</span>
+                                <span class="variable">case</span> <span class="number">1</span>:
+                                {
+                                    string name;
+									
+                                    cout << <span class="cstring">"Enter the task's updated name: "</span>;
+                                    cin.ignore();
+                                    getline(cin, name);
+									
+                                    selectedTask.SetTaskName(name);
+									
+                                    <span class="variable">break</span>;
+                                }
+								
+                                <span class="comment">// Update Task Due Date</span>
+                                <span class="variable">case</span> <span class="number">2</span>:
+                                {
+                                    string due;
+									
+                                    cout << <span class="cstring">"Enter the task's updated due date: "</span>;
+                                    cin.ignore();
+                                    getline(cin, due);
+									
+                                    selectedTask.SetTaskDueDate(due);
+									
+                                    <span class="variable">break</span>;
+                                }
+								
+                                <span class="comment">// Update Task Reminder</span>
+                                <span class="variable">case</span> <span class="number">3</span>:
+                                {
+                                    string reminder;
+									
+                                    cout << <span class="cstring">"Enter the task's updated reminder(s): "</span>;
+                                    cin.ignore();
+                                    getline(cin, reminder);
+									
+                                    selectedTask.SetTaskReminder(reminder);
+									
+                                    <span class="variable">break</span>;
+                                }
+								
+                                <span class="comment">// Update Task Priority</span>
+                                <span class="variable">case</span> <span class="number">4</span>:
+                                {
+                                    string priority;
+									
+                                    cout << <span class="cstring">"Enter the task's updated priority level (Low, Medium, High): "</span>;
+                                    cin.ignore();
+                                    getline(cin, priority);
+									
+                                    selectedTask.SetTaskPriority(priority);
+									
+                                    <span class="variable">break</span>;
+                                }
+								
+                                <span class="comment">// Update Task Status</span>
+                                <span class="variable">case</span> <span class="number">5</span>:
+                                {
+                                    string status;
+									
+                                    cout << <span class="cstring">"Enter the task's updated status: "</span>;
+                                    cin.ignore();
+                                    getline(cin, status);
+									
+                                    selectedTask.SetTaskStatus(status);
+									
+                                    <span class="variable">break</span>;
+                                }
+								
+                                <span class="comment">// Add Task to Category</span>
+                                <span class="variable">case</span> <span class="number">6</span>:
+                                {
+                                    <span class="variable">char</span> answer;
+					
+                                    cout << <span class="cstring">"Would you like to create a new category? (Y/N): "</span>;
+                                    cin >> answer;
+
+                                    <span class="variable">if</span> (answer == <span class="character">'Y'</span>)
+                                    {
+                                        string categoryName;
+						
+                                        cout << <span class="cstring">"Enter the name of the category you would like to create: "</span>;
+                                        cin.ignore();
+                                        getline(cin, categoryName);
+										
+                                        Category newCategory;
+                                        newCategory.SetCategoryId(categoryCount + <span class="number">1</span>);
+                                        newCategory.SetCategoryName(categoryName);
+                                        newCategory.SetCategoryTaskAmount(newCategory.GetCategoryTaskAmount() + <span class="number">1</span>);
+										
+                                        selectedTask.SetCategoryId(newCategory.GetCategoryId());
+										
+                                        categoryList.push_back(newCategory);
+										
+                                        cout << <span class="cstring">"Task successfully added to new category "</span> << newCategory.GetCategoryId() << <span class="cstring">". "</span> << categoryName << endl;
+
+                                        <span class="comment"> // taskCount = taskCount + 1;</span>
+                                        <span class="comment"> // categoryCount = categoryCount + 1;</span>
+                                    }
+                                    <span class="variable">else if</span> (answer != <span class="character">'Y'</span>)
+                                    {
+                                        <span class="variable">int</span> selection4;
+										
+                                        <span class="function">DisplayCategories</span>(categoryList);
+                                        cout << <span class="cstring">"Enter the category number that you would like to add this task into: "</span>;
+
+                                        cin >> selection4;
+										
+                                        selectedTask.SetCategoryId(selection4);
+                                        categoryList[selection4 - <span class="number">1</span>].SetCategoryTaskAmount(categoryList[selection4 - <span class="number">1</span>].GetCategoryTaskAmount() + <span class="number">1</span>);
+										
+                                        cout << <span class="cstring">"Task successfully added to category "</span> << selection4 << <span class="cstring">". "</span> << categoryList[selection4 - <span class="number">1</span>].GetCategoryName() << endl;
+
+                                        <span class="comment"> // taskCount = taskCount + 1;</span>
+                                    }
+									
+                                    <span class="variable">break</span>;
+                                }
+								
+                                <span class="comment">// Remove Task from Category</span>
+                                <span class="variable">case</span> <span class="number">7</span>:
+                                {
+                                    categoryList[selectedTask.GetCategoryId() - <span class="number">1</span>].SetCategoryTaskAmount(categoryList[selectedTask.GetCategoryId() - <span class="number">1</span>].GetCategoryTaskAmount() - <span class="number">1</span>);
+									
+                                    selectedTask.SetCategoryId(<span class="number">0</span>);
+
+                                    cout << <span class="cstring">"Task successfully removed from category!"</span> << endl;
+									
+                                    <span class="variable">break</span>;
+                                }
+								
+                                <span class="comment">// Invalid Input</span>
+                                <span class="variable">default</span>:
+                                {
+                                    cout << <span class="cstring">"Invalid selection!"</span> << endl;
+                                    <span class="variable">break</span>;
+                                }
+                            }
+							
+                            <span class="variable">break</span>;
+                        }
+						
+                        <span class="comment">// Delete Selected Task</span>
+                        <span class="variable">case</span> <span class="number">2</span>:
+                        {
+                            <span class="variable">if</span> (selectedTask.GetCategoryId() != <span class="number">0</span>)
+                            {
+                                categoryList[selectedTask.GetCategoryId() - <span class="number">1</span>].SetCategoryTaskAmount(categoryList[selectedTask.GetCategoryId() - <span class="number">1</span>].GetCategoryTaskAmount() - <span class="number">1</span>);
+                            }
+
+                            taskList.erase(taskList.begin() + (selectedTask.GetTaskId() - <span class="number">1</span>));
+                            cout << <span class="cstring">"Task successfully deleted!"</span> << endl;
+							
+                            taskCount = taskCount - <span class="number">1</span>;
+                            <span class="function">ReassignTaskIDs</span>(taskList);
+							
+                            <span class="variable">break</span>;
+                        }
+						
+                        <span class="comment">// Invalid Input</span>
+                        <span class="variable">default</span>:
+                        {
+                            cout << <span class="cstring">"Invalid selection!"</span> << endl;
+                            <span class="variable">break</span>;
+                        }
+                    }
+                }
+				
+                <span class="variable">break</span>;
+            }
+			
+            <span class="comment">// Edit Categories</span>
+            <span class="variable">case</span> <span class="number">4</span>:
+            {
+                <span class="variable">int</span> selection1, selection2;
+				
+                cout << <span class="cstring">"---------------------------------------------------------"</span> << endl;
+                cout << <span class="cstring">"Type the number for the action you would like to perform:"</span> << endl << endl;
+                cout << <span class="cstring">"1. Create Category"</span> << endl;
+                cout << <span class="cstring">"2. Update Category"</span> << endl;
+                cout << <span class="cstring">"3. Delete Category"</span> << endl;
+                cout << <span class="cstring">"---------------------------------------------------------"</span> << endl;
+                cout << <span class="cstring">"Enter your selection: "</span>;
+				
+                cin >> selection1;
+				
+                <span class="variable">switch</span> (selection1)
+                {
+                    <span class="comment">// Create Category</span>
+                    <span class="variable">case</span> <span class="number">1</span>:
+                    {
+                        string categoryName;
+						
+                        cout << <span class="cstring">"Enter the name of the category you would like to create: "</span>;
+                        cin.ignore();
+                        getline(cin, categoryName);
+						
+                        Category newCategory;
+                        newCategory.SetCategoryId(categoryCount + <span class="number">1</span>);
+                        newCategory.SetCategoryName(categoryName);
+                        newCategory.SetCategoryTaskAmount(<span class="number">0</span>);
+						
+                        categoryList.push_back(newCategory);
+						
+                        cout << <span class="cstring">"New category created successfully!"</span> << endl;
+						
+                        categoryCount = categoryCount + <span class="number">1</span>;
+
+                        <span class="variable">break</span>;
+                    }
+					
+                    <span class="comment">// Update Category</span>
+                    <span class="variable">case</span> <span class="number">2</span>:
+                    {
+                        <span class="variable">if</span> (categoryCount == <span class="number">0</span>)
+                        {
+                            cout << <span class="cstring">"You have no current categories!"</span> << endl;
+                        }
+                        <span class="variable">else</span>
+                        {
+                            <span class="function">DisplayCategories</span>(categoryList);
+							
+                            cout << <span class="cstring">"Enter the category number that you would like to update: "</span>;
+                            cin >> selection2;
+							
+                            Category& selectedCategory = categoryList[selection2 - <span class="number">1</span>];
+							
+                            <span class="variable">int</span> selection3;
+							
+                            cout << <span class="cstring">"---------------------------------------------------------"</span> << endl;
+                            cout << <span class="cstring">"Type the number for the action you would like to perform:"</span> << endl << endl;
+                            cout << <span class="cstring">"1. Update Category Name"</span> << endl;
+                            cout << <span class="cstring">"2. Add Existing Task"</span> << endl;
+                            cout << <span class="cstring">"3. Remove Existing Task"</span> << endl;
+                            cout << <span class="cstring">"---------------------------------------------------------"</span> << endl;
+                            cout << <span class="cstring">"Enter your selection: "</span>;
+                            cin >> selection3;
+							
+                            <span class="variable">switch</span> (selection3)
+                            {
+                                <span class="comment">// Update Category Name</span>
+                                <span class="variable">case</span> <span class="number">1</span>:
+                                {
+                                    string name;
+									
+                                    cout << <span class="cstring">"Enter the category's updated name: "</span>;
+                                    cin.ignore();
+                                    getline(cin, name);
+
+                                    selectedCategory.SetCategoryName(name);
+									
+                                    <span class="variable">break</span>;
+                                }
+								
+                                <span class="comment">// Add Task to Category</span>
+                                <span class="variable">case</span> <span class="number">2</span>:
+                                {
+                                    <span class="variable">int</span> selection4;
+									
+                                    <span class="function">DisplayTasks</span>(taskList, categoryList);
+									
+                                    cout << <span class="cstring">"Enter the task number that you would like to add into this category: "</span>;
+                                    cin >> selection4;
+
+                                    Task selectedTask = taskList[selection4 - <span class="number">1</span>];
+									
+                                    <span class="variable">if</span> (selectedTask.GetCategoryId() != <span class="number">0</span>)
+                                    {
+                                        cout << <span class="cstring">"This task already belongs to a category!"</span> << endl;
+                                    }
+                                    <span class="variable">else</span>
+                                    {
+                                        selectedTask.SetCategoryId(selection4);
+                                        categoryList[selection4 - <span class="number">1</span>].SetCategoryTaskAmount(categoryList[selection4 - <span class="number">1</span>].GetCategoryTaskAmount() + <span class="number">1</span>);
+										
+                                        cout << <span class="cstring">"Task successfully added to category!"</span> << endl;
+                                    }
+
+                                    <span class="variable">break</span>;
+                                }
+								
+                                <span class="comment">// Remove Task from Category</span>
+                                <span class="variable">case</span> <span class="number">3</span>:
+                                {
+                                    <span class="variable">int</span> selection4;
+									
+                                    <span class="function">DisplayTasks</span>(taskList, categoryList);
+									
+                                    cout << <span class="cstring">"Enter the task number that you would like to remove from this category: "</span>;
+                                    cin >> selection4;
+
+                                    Task selectedTask = taskList[selection4 - <span class="number">1</span>];
+
+                                    categoryList[selectedTask.GetCategoryId() - <span class="number">1</span>].SetCategoryTaskAmount(categoryList[selectedTask.GetCategoryId() - <span class="number">1</span>].GetCategoryTaskAmount() - <span class="number">1</span>);
+                                    selectedTask.SetCategoryId(<span class="number">0</span>);
+
+                                    cout << <span class="cstring">"Task successfully removed from category!"</span> << endl;
+
+                                    <span class="variable">break</span>;
+                                }
+								
+                                <span class="comment">// Invalid Input</span>
+                                <span class="variable">default</span>:
+                                {
+                                    cout << <span class="cstring">"Invalid selection!"</span> << endl;
+                                    <span class="variable">break</span>;
+                                }
+                            }
+                        }
+
+                        <span class="variable">break</span>;
+                    }
+
+                    <span class="comment">// Delete Category</span>
+                    <span class="variable">case</span> <span class="number">3</span>:
+                    {
+                        <span class="variable">if</span> (categoryCount == <span class="number">0</span>)
+                        {
+                            cout << <span class="cstring">"You have no current categories!"</span> << endl;
+                        }
+                        <span class="variable">else</span>
+                        {
+                            <span class="function">DisplayCategories</span>(categoryList);
+							
+                            cout << <span class="cstring">"Enter the category number that you would like to delete: "</span>;
+                            cin >> selection2;
+							
+                            Category& selectedCategory = categoryList[selection2 - <span class="number">1</span>];
+							
+                            categoryList.erase(categoryList.begin() + (selectedCategory.GetCategoryId() - <span class="number">1</span>));
+                            cout << <span class="cstring">"Category successfully deleted!"</span> << endl;
+
+                            categoryCount = categoryCount - <span class="number">1</span>;
+                            <span class="function">ReassignCategoryIDs</span>(categoryList, taskList);
+                        }
+
+                        <span class="variable">break</span>;
+                    }
+
+                    <span class="comment">// Invalid Input</span>
+                    <span class="variable">default</span>:
+                    {
+                        cout << <span class="cstring">"Invalid selection!"</span> << endl;
+                        <span class="variable">break</span>;
+                    }
+                }
+
+                <span class="variable">break</span>;
+            }
+
+            <span class="comment">// Exit Program</span>
+            <span class="variable">case</span> <span class="number">5</span>:
+            {
+                cout << <span class="cstring">"Exiting Program..."</span> << endl;
+                <span class="variable">break</span>;
+            }
+
+            <span class="comment">// Invalid Input</span>
+            <span class="variable">default</span>:
+            {
+                cout << <span class="cstring">"Invalid selection. Please try again!"</span> << endl;
+                <span class="variable">break</span>;
+            }
+        }
+    }
+
+
+    <span class="comment">// End of Program Processing</span>
+    <span class="function">SaveTasks</span>(taskList);
+    <span class="function">SaveCategories</span>(categoryList);
+
+    cout << <span class="cstring">"\nThank you for using TaskSphere!"</span> << endl;
+
+    <span class="variable">return</span> <span class="number">0</span>;
+}
+
+
+
+<span class="comment">// Function #1: Displays a menu with several options for the user to choose from</span>
+<span class="variable">void</span> <span class="function">DisplayMenu</span>()
+{
+    cout << <span class="cstring">"\n>> TASKSPHERE MAIN MENU <<"</span> << endl;
+    cout << <span class="cstring">"---------------------------------------------------------"</span> << endl;
+    cout << <span class="cstring">"Type the number for the action you would like to perform:"</span> << endl << endl;
+    cout << <span class="cstring">"1. View Tasks"</span> << endl;
+    cout << <span class="cstring">"2. Create Task"</span> << endl;
+    cout << <span class="cstring">"3. Edit Tasks"</span> << endl;
+    cout << <span class="cstring">"4. Edit Categories"</span> << endl;
+    cout << <span class="cstring">"5. Exit TaskSphere"</span> << endl;
+    cout << <span class="cstring">"---------------------------------------------------------"</span> << endl;
+}
+
+
+<span class="comment">// Function #2: Displays a complete list of tasks that the user created</span>
+<span class="variable">void</span> <span class="function">DisplayTasks</span>(<span class="variable">vector</span>&lt;Task&gt;& taskList, <span class="variable">vector</span>&lt;Category&gt;& categoryList)
+{
+    cout << <span class="cstring">"\n>> TASK LIST <<"</span> << endl;
+    cout << <span class="cstring">"---------------------------------------------------------"</span> << endl;
+    cout << <span class="cstring">"Here is a list of all of your existing tasks:"</span> << endl << endl;
+
+    for (<span class="variable">int</span> i = <span class="number">0</span>; i < taskList.size(); i++)
+    {
+        cout << taskList[i].GetTaskId() << <span class="cstring">". "</span> << taskList[i].GetTaskName() << <span class="cstring">" | Due: "</span> << taskList[i].GetTaskDueDate()
+             << <span class="cstring">" | Reminder(s): "</span> << taskList[i].GetTaskReminder() << <span class="cstring">" | Priority: "</span> << taskList[i].GetTaskPriority()
+             << <span class="cstring">" | Category: "</span> << ((taskList[i].GetCategoryId() == <span class="number">0</span>) ? "None" : categoryList[taskList[i].GetCategoryId() - <span class="number">1</span>].GetCategoryName())
+             << <span class="cstring">" | Status: "</span> << taskList[i].GetTaskStatus()
+             << endl;
+    }
+
+    cout << <span class="cstring">"---------------------------------------------------------"</span> << endl;
+}
+
+
+<span class="comment">// Function #3: Displays a complete list of categories that the user created</span>
+<span class="variable">void</span> <span class="function">DisplayCategories</span>(<span class="variable">vector</span>&lt;Category&gt;& categoryList)
+{
+    cout << <span class="cstring">"\n>> CATEGORY LIST <<"</span> << endl;
+    cout << <span class="cstring">"---------------------------------------------------------"</span> << endl;
+    cout << <span class="cstring">"Here is a list of all of the existing categories:"</span> << endl << endl;
+
+    for (Category category : categoryList)
+    {
+        cout << category.GetCategoryId() << <span class="cstring">". "</span> << category.GetCategoryName()
+             << <span class="cstring">" | Tasks: "</span> << category.GetCategoryTaskAmount() << endl;
+    }
+
+    cout << <span class="cstring">"---------------------------------------------------------"</span> << endl;
+}
+
+
+<span class="comment">// Function #4: Reassigns task IDs and puts them in correct order after a task is deleted</span>
+<span class="variable">void</span> <span class="function">ReassignTaskIDs</span>(<span class="variable">vector</span>&lt;Task&gt;& taskList)
+{
+    for (<span class="variable">int</span> i = <span class="number">0</span>; i < taskList.size(); i++)
+    {
+        taskList[i].SetTaskId(i + <span class="number">1</span>);
+    }
+}
+
+
+<span class="comment">// Function #5: Reassigns category IDs and puts them in correct order + updates task category IDs after a category is deleted</span>
+<span class="variable">void</span> <span class="function">ReassignCategoryIDs</span>(<span class="variable">vector</span>&lt;Category&gt;& categoryList, <span class="variable">vector</span>&lt;Task&gt;& taskList)
+{
+    for (<span class="variable">int</span> i = <span class="number">0</span>; i < taskList.size(); i++)
+    {
+        <span class="variable">if</span> (taskList[i].GetCategoryId() != <span class="number">0</span>)
+        {
+            <span class="variable">bool</span> categoryFound = <span class="bool">false</span>;
+
+            for (<span class="variable">int</span> j = <span class="number">0</span>; j < categoryList.size(); j++)
+            {
+                <span class="variable">if</span> (taskList[i].GetCategoryId() == categoryList[j].GetCategoryId())
+                {
+                    taskList[i].SetCategoryId(j + <span class="number">1</span>);
+                    categoryFound = <span class="bool">true</span>;
+                    <span class="variable">break</span>;
+                }
+            }
+
+            <span class="variable">if</span> (categoryFound == <span class="bool">false</span>)
+            {
+                taskList[i].SetCategoryId(<span class="number">0</span>);
+            }
+        }
+    }
+
+    for (<span class="variable">int</span> i = <span class="number">0</span>; i < categoryList.size(); i++)
+    {
+        categoryList[i].SetCategoryId(i + <span class="number">1</span>);
+    }
+}
+
+
+<span class="comment">// Function #6: Loads saved tasks from a text document and adds them to the taskList vector</span>
+<span class="variable">void</span> <span class="function">LoadTasks</span>(<span class="variable">vector</span>&lt;Task&gt;& taskList, <span class="variable">int</span>& taskCount)
+{
+    ifstream taskSaves("Tasks.txt");
+	
+    <span class="variable">if</span> (taskSaves.is_open())
+    {
+        taskList.clear();
+        string line;
+
+        while (getline(taskSaves, line))
+        {
+            stringstream s(line);
+            string taskId, name, dueDate, reminder, priorityLevel, categoryId, status;
+
+            <span class="variable">if</span> (line.empty())
+            {
+                cout << <span class="cstring">"Empty line!"</span> << endl;
+            }
+            <span class="variable">else</span>
+            {
+                getline</span>(s, taskId, '|');
+                getline</span>(s, name, '|');
+                getline</span>(s, dueDate, '|');
+                getline</span>(s, reminder, '|');
+                getline</span>(s, priorityLevel, '|');
+                getline</span>(s, categoryId, '|');
+                getline</span>(s, status, '|');
+				
+                Task loadedTask;
+				
+                loadedTask.SetTaskId(stoi(taskId));
+                loadedTask.SetTaskName(name);
+                loadedTask.SetTaskDueDate(dueDate);
+                loadedTask.SetTaskReminder(reminder);
+                loadedTask.SetTaskPriority(priorityLevel);
+                loadedTask.SetCategoryId(stoi(categoryId));
+                loadedTask.SetTaskStatus(status);
+				
+                taskList.push_back(loadedTask);
+                taskCount = taskCount + <span class="number">1</span>;
+            }
+        }
+
+        <span class="comment">// cout << "Successfully loaded all tasks!" << endl;</span>
+        taskSaves.close();
+    }
+    <span class="variable">else</span>
+    {
+        cerr << <span class="cstring">"Error: Failed to open Tasks file."</span> << endl;
+        <span class="variable">return</span>;
+    }
+}
+
+
+<span class="comment">// Function #7: Loads saved categories from a text document and adds them to the categoryList vector</span>
+<span class="variable">void</span> <span class="function">LoadCategories</span>(<span class="variable">vector</span>&lt;Category&gt;& categoryList, <span class="variable">int</span>& categoryCount)
+{
+    ifstream categorySaves("Categories.txt");
+	
+    <span class="variable">if</span> (categorySaves.is_open())
+    {
+        categoryList.clear();
+        string line;
+
+        while (getline(categorySaves, line))
+        {
+            stringstream s(line);
+            string categoryId, name, taskAmount;
+
+            <span class="variable">if</span> (line.empty())
+            {
+                cout << <span class="cstring">"Empty line!"</span> << endl;
+            }
+            <span class="variable">else</span>
+            {
+                getline</span>(s, categoryId, '|');
+                getline</span>(s, name, '|');
+                getline</span>(s, taskAmount, '|');
+				
+                Category loadedCategory;
+				
+                loadedCategory.SetCategoryId(stoi(categoryId));
+                loadedCategory.SetCategoryName(name);
+                loadedCategory.SetCategoryTaskAmount(stoi(taskAmount));
+				
+                categoryList.push_back(loadedCategory);
+                categoryCount = categoryCount + <span class="number">1</span>;
+            }
+        }
+
+        <span class="comment">// cout << "Successfully loaded all categories!" << endl;</span>
+        categorySaves.close();
+    }
+    <span class="variable">else</span>
+    {
+        cerr << <span class="cstring">"Error: Failed to open Categories file."</span> << endl;
+        <span class="variable">return</span>;
+    }
+}
+
+
+<span class="comment">// Function #8: Saves all created tasks to a text document</span>
+<span class="variable">void</span> <span class="function">SaveTasks</span>(<span class="variable">vector</span>&lt;Task&gt;& taskList)
+{
+    ofstream taskSaves("Tasks.txt");
+	
+    <span class="variable">if</span> (taskSaves.is_open())
+    {
+        for (<span class="variable">int</span> i = <span class="number">0</span>; i < taskList.size(); i++)
+        {
+            taskSaves << taskList[i].GetTaskId() << "|"
+                      << taskList[i].GetTaskName() << "|"
+                      << taskList[i].GetTaskDueDate() << "|"
+                      << taskList[i].GetTaskReminder() << "|"
+                      << taskList[i].GetTaskPriority() << "|"
+                      << taskList[i].GetCategoryId() << "|"
+                      << taskList[i].GetTaskStatus() << endl;
+        }
+
+        cout << <span class="cstring">"Successfully saved all tasks!"</span> << endl;
+        taskSaves.close();
+    }
+    <span class="variable">else</span>
+    {
+        cerr << <span class="cstring">"Error: Failed to open Tasks file."</span> << endl;
+        <span class="variable">return</span>;
+    }
+}
+
+
+<span class="comment">// Function #9: Saves all created categories to a text document</span>
+<span class="variable">void</span> <span class="function">SaveCategories</span>(<span class="variable">vector</span>&lt;Category&gt;& categoryList)
+{
+    ofstream categorySaves("Categories.txt");
+	
+    <span class="variable">if</span> (categorySaves.is_open())
+    {
+        for (<span class="variable">int</span> i = <span class="number">0</span>; i < categoryList.size(); i++)
+        {
+            categorySaves << categoryList[i].GetCategoryId() << "|"
+                          << categoryList[i].GetCategoryName() << "|"
+                          << categoryList[i].GetCategoryTaskAmount() << endl;
+        }
+
+        cout << <span class="cstring">"Successfully saved all categories!"</span> << endl;
+        categorySaves.close();
+    }
+    <span class="variable">else</span>
+    {
+        cerr << <span class="cstring">"Error: Failed to open Categories file."</span> << endl;
+        <span class="variable">return</span>;
+    }
+}
+</code><span class="comment"> Microsoft Visual Studio </span>
+</pre>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+</div>
+
+<div class="box" id="code2">
+<h3>SOURCE FILES</h3>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+<pre><code><span class="comment">//  INEW-2340-001 Final Project</span>
+<span class="comment">//  Author: Ashton McBride</span>
+<span class="comment">//  Date: 10/13/2024</span>
+<span class="comment">//  TaskSphere - Category.cpp</span>
+
+<span class="preprocessor">#include "Category.h"</span>
+
+<span class="preprocessor">#include &lt;string&gt;</span>
+<span class="preprocessor">#include &lt;iostream&gt;</span>
+<span class="variable">using namespace</span> std;
+
+
+<span class="comment">// Empty Constructor</span>
+Category::<span class="function">Category</span>() : categoryId(<span class="number">0</span>), name(<span class="cstring">"Empty"</span>), taskAmount(<span class="number">0</span>) {}
+
+<span class="comment">// Base Constructor</span>
+Category::<span class="function">Category</span>(<span class="variable">int</span> id, string categoryName, <span class="variable">int</span> amount) : categoryId(id), name(categoryName), taskAmount(amount) {}
+
+
+<span class="comment">// Getters</span>
+<span class="variable">int</span> Category::<span class="function">GetCategoryId</span>() {
+    <span class="variable">return</span> categoryId;
+}
+string Category::<span class="function">GetCategoryName</span>() {
+    <span class="variable">return</span> name;
+}
+<span class="variable">int</span> Category::<span class="function">GetCategoryTaskAmount</span>() {
+    <span class="variable">return</span> taskAmount;
+}
+
+
+<span class="comment">// Setters</span>
+<span class="variable">void</span> Category::<span class="function">SetCategoryId</span>(<span class="variable">int</span> id) {
+    categoryId = id;
+}
+<span class="variable">void</span> Category::<span class="function">SetCategoryName</span>(string categoryName) {
+    name = categoryName;
+}
+<span class="variable">void</span> Category::<span class="function">SetCategoryTaskAmount</span>(<span class="variable">int</span> amount) {
+    taskAmount = amount;
+}
+</code></pre>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+<pre><code><span class="comment">//  INEW-2340-001 Final Project</span>
+<span class="comment">//  Author: Ashton McBride</span>
+<span class="comment">//  Date: 10/13/2024</span>
+<span class="comment">//  TaskSphere - Task.cpp</span>
+
+<span class="preprocessor">#include "Task.h"</span>
+
+<span class="preprocessor">#include &lt;string&gt;</span>
+<span class="preprocessor">#include &lt;iostream&gt;</span>
+<span class="variable">using namespace</span> std;
+
+
+<span class="comment">// Empty Constructor</span>
+Task::<span class="function">Task</span>() : taskId(<span class="number">0</span>), name(<span class="cstring">"Empty"</span>), dueDate(<span class="cstring">"Empty"</span>), reminder(<span class="cstring">"Empty"</span>), priorityLevel(<span class="cstring">"Low"</span>), categoryId(<span class="number">0</span>), status(<span class="cstring">"Incomplete"</span>) {}
+
+<span class="comment">// Base Constructor</span>
+Task::<span class="function">Task</span>(<span class="variable">int</span> id1, string taskName, string date, string remind, string priority, <span class="variable">int</span> id2, string stat) : taskId(id1), name(taskName), dueDate(date), reminder(remind), priorityLevel(priority), categoryId(id2), status(stat) {}
+
+
+<span class="comment">// Getters</span>
+<span class="variable">int</span> Task::<span class="function">GetTaskId</span>() {
+    <span class="variable">return</span> taskId;
+}
+string Task::<span class="function">GetTaskName</span>() {
+    <span class="variable">return</span> name;
+}
+string Task::<span class="function">GetTaskDueDate</span>() {
+    <span class="variable">return</span> dueDate;
+}
+string Task::<span class="function">GetTaskReminder</span>() {
+    <span class="variable">return</span> reminder;
+}
+string Task::<span class="function">GetTaskPriority</span>() {
+    <span class="variable">return</span> priorityLevel;
+}
+<span class="variable">int</span> Task::<span class="function">GetCategoryId</span>() {
+    <span class="variable">return</span> categoryId;
+}
+string Task::<span class="function">GetTaskStatus</span>() {
+    <span class="variable">return</span> status;
+}
+
+
+<span class="comment">// Setters</span>
+<span class="variable">void</span> Task::<span class="function">SetTaskId</span>(<span class="variable">int</span> id1) {
+    taskId = id1;
+}
+<span class="variable">void</span> Task::<span class="function">SetTaskName</span>(string taskName) {
+    name = taskName;
+}
+<span class="variable">void</span> Task::<span class="function">SetTaskDueDate</span>(string date) {
+    dueDate = date;
+}
+<span class="variable">void</span> Task::<span class="function">SetTaskReminder</span>(string remind) {
+    reminder = remind;
+}
+<span class="variable">void</span> Task::<span class="function">SetTaskPriority</span>(string priority) {
+    priorityLevel = priority;
+}
+<span class="variable">void</span> Task::<span class="function">SetCategoryId</span>(<span class="variable">int</span> id2) {
+    categoryId = id2;
+}
+<span class="variable">void</span> Task::<span class="function">SetTaskStatus</span>(string stat) {
+    status = stat;
+}
+</code></pre>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+</div>
+
+<div class="box" id="code3">
+<h3>HEADER FILES</h3>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+<pre><code><span class="comment">//  INEW-2340-001 Final Project</span>
+<span class="comment">//  Author: Ashton McBride</span>
+<span class="comment">//  Date: 10/13/2024</span>
+<span class="comment">//  TaskSphere - Category.h</span>
+
+<span class="preprocessor">#ifndef CATEGORY_H</span>
+<span class="preprocessor">#define CATEGORY_H</span>
+
+<span class="preprocessor">#include &lt;string&gt;</span>
+<span class="variable">using namespace</span> std;
+
+
+<span class="variable">class</span> Category {
+<span class="variable">private</span>:
+
+    <span class="variable">int</span> categoryId;
+    string name;
+    <span class="variable">int</span> taskAmount;
+	
+<span class="variable">public</span>:
+
+    <span class="comment">// Constructors</span>
+    <span class="function">Category</span>();
+    <span class="function">Category</span>(<span class="variable">int</span>, string, <span class="variable">int</span>);
+	
+    <span class="comment">// Getters</span>
+    <span class="variable">int</span> <span class="function">GetCategoryId</span>();
+    string <span class="function">GetCategoryName</span>();
+    <span class="variable">int</span> <span class="function">GetCategoryTaskAmount</span>();
+	
+    <span class="comment">// Setters</span>
+    <span class="variable">void</span> <span class="function">SetCategoryId</span>(<span class="variable">int</span>);
+    <span class="variable">void</span> <span class="function">SetCategoryName</span>(string);
+    <span class="variable">void</span> <span class="function">SetCategoryTaskAmount</span>(<span class="variable">int</span>);
+
+};
+
+#endif <span class="comment">/* CATEGORY_H */</span>
+</code></pre>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+<pre><code><span class="comment">//  INEW-2340-001 Final Project</span>
+<span class="comment">//  Author: Ashton McBride</span>
+<span class="comment">//  Date: 10/13/2024</span>
+<span class="comment">//  TaskSphere - Task.h</span>
+
+<span class="preprocessor">#ifndef TASK_H</span>
+<span class="preprocessor">#define TASK_H</span>
+
+<span class="preprocessor">#include &lt;string&gt;</span>
+<span class="variable">using namespace</span> std;
+
+
+<span class="variable">class</span> Task {
+<span class="variable">private</span>:
+
+    <span class="variable">int</span> taskId;
+    string name;
+    string dueDate;
+    string reminder;
+    string priorityLevel;
+    <span class="variable">int</span> categoryId;
+    string status;
+	
+<span class="variable">public</span>:
+
+    <span class="comment">// Constructors</span>
+    <span class="function">Task</span>();
+    <span class="function">Task</span>(<span class="variable">int</span>, string, string, string, string, <span class="variable">int</span>, string);
+	
+    <span class="comment">// Getters</span>
+    <span class="variable">int</span> <span class="function">GetTaskId</span>();
+    string <span class="function">GetTaskName</span>();
+    string <span class="function">GetTaskDueDate</span>();
+    string <span class="function">GetTaskReminder</span>();
+    string <span class="function">GetTaskPriority</span>();
+    <span class="variable">int</span> <span class="function">GetCategoryId</span>();
+    string <span class="function">GetTaskStatus</span>();
+	
+    <span class="comment">// Setters</span>
+    <span class="variable">void</span> <span class="function">SetTaskId</span>(<span class="variable">int</span>);
+    <span class="variable">void</span> <span class="function">SetTaskName</span>(string);
+    <span class="variable">void</span> <span class="function">SetTaskDueDate</span>(string);
+    <span class="variable">void</span> <span class="function">SetTaskReminder</span>(string);
+    <span class="variable">void</span> <span class="function">SetTaskPriority</span>(string);
+    <span class="variable">void</span> <span class="function">SetCategoryId</span>(<span class="variable">int</span>);
+    <span class="variable">void</span> <span class="function">SetTaskStatus</span>(string);
+
+};
+
+#endif <span class="comment">/* TASK_H */</span>
+</code></pre>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+					</div>
+
+					<hr />
+
+					<!-- Output -->
+					<h2 id="output">OUTPUT</h2>
+					<div class="box">
+						
+					</div>
+
+				</section>
+				
+				<!-- Arrow -->
+				 <section>
+
+					<h5 style="display: flex; justify-content: center;">BACK TO TOP</h5></li>
+					<ul class="actions" style="display: flex; justify-content: center;">
+						<li><a href="#header" class="button icon solid solo fa-arrow-up scrolly"></a></li>
+					</ul>
+					
+				</section>
+
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				
+				<!-- Contact Me -->
+				<section class="split contact">
+
+					<!-- Title -->
+					<h2 style="display: flex; justify-content: center;">CONTACT ME</h2> 
+
+					<!-- Email -->
+					<section>
+						<h3>EMAIL</h3>
+						<p><a href="mailto:ashtonmcbride.business@gmail.com" target="_blank">ashtonmcbride.business@gmail.com</a></p>
+					</section>
+
+					<!-- Location -->
+					<section class="alt">
+						<h3>Location</h3>
+						<p>Texas, United States</p>
+					</section>
+
+				</section>
+
+			</footer>
+
+			<!-- Page End-->
+			<div id="copyright">
+
+				<!-- Title -->
+				<h2 style="color: #a7a7a7">ASHTON M<span style="text-transform: lowercase">C</span>BRIDE</h2>
+
+				<!-- Links -->
+				<ul class="icons">
+					<li><a href="https://roblox.com/users/81033782/profile" target="_blank" class="icon"><span class="iconify fa-lg" data-icon="simple-icons:roblox" class="label" style="font-size: 1.5em;">Roblox</span></a></li>
+					<li><a href="https://github.com/ashtonmcbride" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://youtube.com/@Zen_os" target="_blank" class="icon brands fa-youtube"><span class="label">youtube</span></a></li>
+					<li><a href="https://x.com/Zen_os" target="_blank" class="icon brands fa-x-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://ebay.com/usr/zens.store" target="_blank" class="icon brands fa-ebay"><span class="label">ebay</span></a></li>
+				</ul>
+
+				<!-- Credits -->
+				<br><br><ul><li>TEMPLATE BY <a href="https://html5up.net" target="_blank">HTML5 UP</a></li></ul>
+
+			</div>
+
+			<!-- CODE FOR LIGHTBOX / IMAGE SLIDERS -->
+			<div id="lightbox" class="lightbox">
+				<img class="lightbox-content" id="lightbox-img">
+				<span class="lightbox-prev" id="lightbox-prev" style="display: none;">&#10094;</span>
+				<span class="lightbox-next" id="lightbox-next" style="display: none;">&#10095;</span>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/lightbox.js"></script>
+		<script src="assets/js/imageslider.js"></script>
+		<script src="assets/js/iconify.min.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+
+</html>
